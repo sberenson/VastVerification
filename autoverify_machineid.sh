@@ -371,7 +371,7 @@ function get_actual_status {
 # create all the instances as needed
 #Offers=($(./vast search offers 'verified=false cuda_vers>=12.0  gpu_frac=1 reliability>0.90 direct_port_count>3 pcie_bw>3 inet_down>10 inet_up>10 gpu_ram>5'  -o 'dlperf-'  | sed 's/|/ /'  | awk '{print $1}' )) # get all the instanses number from vast
 #unset Offers[0] #delte the first index as it contains the title
-./destroy_all_instances.sh
+./destroy_all_instances.sh "$1"
 
 
 # Fetch data from the system
@@ -677,7 +677,7 @@ sleep 10
 done
 
 
-./destroy_all_instances.sh
+./destroy_all_instances.sh "$1"
 
 
 # List of files to convert
