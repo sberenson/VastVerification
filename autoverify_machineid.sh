@@ -28,7 +28,7 @@ install_if_missing() {
 check_and_update_dependencies() {
     local required_version="$1"
     local version_file="version.ini"
-    local download_url="https://github.com/jjziets/VastVerification/releases/download/$required_version"
+    local download_url="https://github.com/sberenson/VastVerification/releases/download/$required_version"
 
     # Check if version.ini exists and read the current version
     if [ -f "$version_file" ]; then
@@ -101,11 +101,11 @@ check_and_update_dependencies "$required_version"
 
 # URLs of the files to check and download (this part remains the same)
 URLS=(
-    "https://github.com/jjziets/VastVerification/releases/download/$required_version/machinetester.sh"
-    "https://github.com/jjziets/VastVerification/releases/download/$required_version/check_machine_requirements.sh"
-    "https://github.com/jjziets/VastVerification/releases/download/$required_version/destroy_all_instances.sh"
-    "https://github.com/jjziets/VastVerification/releases/download/$required_version/get_port_from_instance_id.py"
-    "https://github.com/jjziets/VastVerification/releases/download/$required_version/https_client.py"
+    "https://github.com/sberenson/VastVerification/releases/download/$required_version/machinetester.sh"
+    "https://github.com/sberenson/VastVerification/releases/download/$required_version/check_machine_requirements.sh"
+    "https://github.com/sberenson/VastVerification/releases/download/$required_version/destroy_all_instances.sh"
+    "https://github.com/sberenson/VastVerification/releases/download/$required_version/get_port_from_instance_id.py"
+    "https://github.com/sberenson/VastVerification/releases/download/$required_version/https_client.py"
 )
 
 # Loop through each URL
