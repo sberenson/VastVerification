@@ -60,7 +60,7 @@ Before you start using `./autoverify_machineid.sh {MACHINE_ID}`, ensure you have
 2. **Download autoverify_machineid.sh**:
    - Use wget to download autoverify_machineid.sh to your local machine:
      ```bash
-     wget https://github.com/sberenson/VastVerification/releases/download/0.4-beta/autoverify_machineid.sh
+     wget https://github.com/sberenson/VastVerification/releases/download/v0.1.0-alpha/autoverify_machineid.sh
      ```
      
 3. **Make Scripts Executable**:
