@@ -29,7 +29,7 @@ To qualify for detailed testing, a machine must:
 - The docker image must be loaded in 2000s(33min) and the docker image should complete testing in 300s(5min)
 
 
-## Step-by-Step Guide: Using `./autoverify_machineid.sh`
+## Step-by-Step Guide: Using `./autoverify_machineid.sh {MACHINE_ID}`
 
 ### Overview
 
@@ -37,7 +37,7 @@ The `autoverify_machineid.sh` script is part of a suite of tools designed to aut
 
 ### Prerequisites
 
-Before you start using `./autoverify_machineid.sh`, ensure you have the following:
+Before you start using `./autoverify_machineid.sh {MACHINE_ID}`, ensure you have the following:
 
 1. **Vast.ai Command Line Interface (vastcli)**: This tool is used to interact with the Vast.ai platform.
 2. **Vast.ai **: The machine should be listed on the vast marketplace.
@@ -54,13 +54,13 @@ Before you start using `./autoverify_machineid.sh`, ensure you have the followin
 
    - Set your Vast.ai API key:
      ```bash
-     ./vast set api-key 6189d1be9f15ad2dced0ac4e3dfd1f648aeb484d592e83d13aaf50aee2d24c07
+     ./vast set api-key XXXXXXX
      ```
 
 2. **Download autoverify_machineid.sh**:
    - Use wget to download autoverify_machineid.sh to your local machine:
      ```bash
-     wget https://github.com/jjziets/VastVerification/releases/download/0.4-beta/autoverify_machineid.sh
+     wget https://github.com/sberenson/VastVerification/releases/download/0.4-beta/autoverify_machineid.sh
      ```
      
 3. **Make Scripts Executable**:
@@ -69,7 +69,7 @@ Before you start using `./autoverify_machineid.sh`, ensure you have the followin
      chmod +x autoverify_machineid.sh
      ```
 
-### Using `./autoverify_machineid.sh`
+### Using `./autoverify_machineid.sh {MACHINE_ID}`
 
 1. **Check Machine Requirements**:
    - The `./autoverify_machineid.sh` script is designed to test if a single machine meets the minimum requirements for verification. This is useful for hosts who want to verify their own machines.
